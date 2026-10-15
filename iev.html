@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Índice de Energía Vital (IEV) · Spinozómetro</title>
+  <meta name="description" content="Herramienta reflexiva inspirada en la Ética de Spinoza." />
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <nav aria-label="Principal" class="nav">
+    <a class="iev" href="./iev.html" aria-current="page">Energía Vital</a>
+    <a class="ier" href="./index.html">Entorno (Spinozómetro)</a>
+    <a class="irc" href="./irc.html">Razón</a>
+    <a class="pag" href="./pag.html">PAG</a>
+  </nav>
+
+  <main class="page">
+    <h1 class="page-title">Índice de Energía Vital (IEV)</h1>
+    <p class="page-sub">Conatus: la fuerza interna para perseverar. Respondé pensando en las últimas dos semanas.</p>
+
+    <div class="icons-row c-iev">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></svg>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>
+    </div>
+
+    <div id="questions" class="stack"></div>
+
+    <div class="mt-5 center">
+      <button id="calcBtn" class="btn primary" disabled>Calcular mi IEV</button>
+    </div>
+
+    <div id="result" class="card b-iev mt-6 center hidden">
+      <p class="text-sm">Tu Índice de Energía Vital</p>
+      <p class="text-5xl bold c-iev"><span id="ievValue"></span><span class="text-lg"> / 10</span></p>
+      <div class="bar narrow iev"><div id="ievBar"></div></div>
+      <p class="text-xs muted">Si hace tiempo te sentís sin fuerzas, conversalo con un profesional de la salud.</p>
+      <div class="row-actions centered">
+        <button id="saveBtn" class="btn primary">Guardar y calcular mi PAG</button>
+        <a href="./pag.html" class="btn">Calcular mi PAG</a>
+      </div>
+    </div>
+
+    <p class="disclaimer">Herramienta reflexiva inspirada en la Ética de Spinoza. No es un diagnóstico psicológico.</p>
+  </main>
+
+  <script src="./js/utils.js"></script>
+  <script src="./js/iev.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/pages/iev.js"></script>
+</body>
+</html>

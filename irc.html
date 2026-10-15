@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Índice de Razón y Causalidad (IRC) · Spinozómetro</title>
+  <meta name="description" content="Herramienta reflexiva inspirada en la Ética de Spinoza." />
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <nav aria-label="Principal" class="nav">
+    <a class="iev" href="./iev.html">Energía Vital</a>
+    <a class="ier" href="./index.html">Entorno (Spinozómetro)</a>
+    <a class="irc" href="./irc.html" aria-current="page">Razón</a>
+    <a class="pag" href="./pag.html">PAG</a>
+  </nav>
+
+  <main class="page">
+    <h1 class="page-title">Índice de Razón y Causalidad (IRC)</h1>
+    <p class="page-sub">Intellectus: transformá pasiones en ideas adecuadas. Movés cada control del 1 al 10.</p>
+
+    <div class="icons-row c-irc">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><circle cx="12" cy="12" r="2"/></svg>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+    </div>
+
+    <div id="items" class="stack"></div>
+
+    <div class="mt-5 center">
+      <button id="calcBtn" class="btn primary">Calcular mi IRC</button>
+    </div>
+
+    <div id="result" class="card mt-6 hidden">
+      <div id="gauge"></div>
+      <div id="stateBox" class="state-box">
+        <p id="stateName" class="text-lg bold"></p>
+        <p id="stateMsg" class="mt-1 text-sm"></p>
+      </div>
+      <div class="row-actions">
+        <button id="saveBtn" class="btn primary">Guardar y calcular mi PAG</button>
+        <button id="pdfBtn" class="btn">Descargar PDF</button>
+        <a href="./pag.html" class="btn">Calcular mi PAG</a>
+      </div>
+    </div>
+
+    <p class="disclaimer">Herramienta reflexiva inspirada en la Ética de Spinoza. No es un diagnóstico psicológico.</p>
+  </main>
+
+  <script src="./js/utils.js"></script>
+  <script src="./js/theme.js"></script>
+  <script src="./js/irc.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/pdf.js"></script>
+  <script src="./js/pages/irc.js"></script>
+</body>
+</html>

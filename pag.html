@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora PAG · Spinozómetro</title>
+  <meta name="description" content="Herramienta reflexiva inspirada en la Ética de Spinoza." />
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <nav aria-label="Principal" class="nav">
+    <a class="iev" href="./iev.html">Energía Vital</a>
+    <a class="ier" href="./index.html">Entorno (Spinozómetro)</a>
+    <a class="irc" href="./irc.html">Razón</a>
+    <a class="pag" href="./pag.html" aria-current="page">PAG</a>
+  </nav>
+
+  <main class="page">
+    <h1 class="page-title">Calculadora PAG</h1>
+    <p class="page-sub">Potencia Activa Global: la síntesis de tus tres índices.</p>
+
+    <div class="card b-pag mb-4 center">
+      <p class="bold" id="formula"></p>
+      <p class="mt-1 text-sm muted" id="impact"></p>
+    </div>
+
+    <p id="autoNote" class="mb-2 center text-xs muted hidden">Autocompletado con tus últimas mediciones guardadas. Podés editarlo.</p>
+
+    <div id="fields" class="grid cols-3-md"></div>
+
+    <div class="mt-5 center">
+      <button id="calcBtn" class="btn primary">Calcular PAG</button>
+    </div>
+
+    <div id="result" class="card mt-6 hidden">
+      <div id="gauge"></div>
+      <p id="levelName" class="mt-3 center text-xl bold"></p>
+      <p id="levelMsg" class="mt-1 center text-sm"></p>
+      <p class="mt-1 center text-xs muted">Equivale a un perfil parejo de <span id="balanced"></span> en los tres índices.</p>
+      <div role="alert" class="alert-orange">
+        <b>Eje prioritario de intervención:</b> <span id="limiting"></span>
+      </div>
+      <div class="row-actions">
+        <button id="saveBtn" class="btn primary">Guardar medición</button>
+        <button id="pdfBtn" class="btn">Descargar PDF</button>
+        <button id="printBtn" class="btn">Imprimir</button>
+      </div>
+    </div>
+
+    <p class="mt-6 center text-xs muted-light">Evaluación y mejora de personas</p>
+
+    <p class="disclaimer">Herramienta reflexiva inspirada en la Ética de Spinoza. No es un diagnóstico psicológico.</p>
+  </main>
+
+  <script src="./js/utils.js"></script>
+  <script src="./js/validation.js"></script>
+  <script src="./js/theme.js"></script>
+  <script src="./js/pag.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/pdf.js"></script>
+  <script src="./js/pages/pag.js"></script>
+</body>
+</html>
